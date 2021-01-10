@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <p>Please enter your first name and last name.</p>
-    <form method="POST" action="pdfMake\pdf">
-        <label for='txtFirstName'>First Name: </label>
-        <input type="text" id='txtFirstName' name='fname'>
+    <div class="main">   
+        <p>Пожалуйста, введите свое имя и фамилию.</p>
+        <form method="POST" action="pdfMake\pdf">
+            <div class="field">
+                <label for='txtFirstName'>Имя: </label>
+                <input type="text" id='txtFirstName' name='fname'>
+            </div>
+            <br>
+            <br>
+            <div class="field">
+                <label for='txtLastName'>Фамилия: </label>
+                <input type="text" id='txtLastName' name='lname'>
+            </div>
+            <br>
+            <br>
 
-        <br>
-        <br>
-
-        <label for='txtLastName'>Last Name: </label>
-        <input type="text" id='txtLastName' name='lname'>
-
-        <br>
-        <br>
-
-        <button type="submit" >Create Pdf</button>
-    </form>
+            <button type="submit" >Создать Pdf</button>
+        </form>
+    </div>
 </body>
 </html>
